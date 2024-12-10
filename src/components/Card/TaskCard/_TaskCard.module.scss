@@ -1,0 +1,92 @@
+.task {
+  display: flex;
+  flex-direction: column;
+
+  &--inprogress {
+    .task__number {
+      background-color: #5D5D5D;
+    }
+  }
+  &--delayed {
+    .task__number {
+      background-color: #F9372C;
+    }
+  }
+  &--comment {
+    .task__number {
+      background-color: #019EC1;
+    }
+  }
+  &--done {
+    .task__number {
+      background-color: #1C9A13;
+    }
+  }
+
+  &__header-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 16px 0 16px 0;
+    background-color: #5D5D5D;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  &__status {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__setting-icon {
+    padding: 5px;
+    margin-left: auto;
+  }
+
+  &__info {
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-item {
+        display: flex;
+    }
+
+    &-field {
+        display: flex;
+        justify-content: center;
+        padding: 6px 16px;
+        color: #444444;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &-value {
+        display: flex;
+        justify-content: center;
+        padding: 6px 16px;
+        color: #222222;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+  }
+
+  &__text-wrapper {
+    padding: 14px 16px;
+    border-top: 1px solid #DBDBDB;
+  }
+}

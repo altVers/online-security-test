@@ -1,0 +1,38 @@
+.expandable-text {
+    position: relative;
+    
+}
+
+.text {
+    position: relative;
+    max-height: 6em; /* Максимальная высота для 3 строк текста */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Плавный переход */
+}
+
+.collapsed {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 3; /* Указывает на количество строк для обрезки */
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.2em; /* Высота градиента */
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+}
+
+.read-more,
+.collapse {
+    color: orange;
+    cursor: pointer;
+    display: block; /* Делает текст кликабельным */
+}
+
+.expanded {
+    max-height: none; /* Убираем ограничение на высоту */
+}

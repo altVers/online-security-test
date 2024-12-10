@@ -1,0 +1,47 @@
+.expandable-text {
+  position: relative;
+  
+  &__text {
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+    &--collapsed {
+      max-height: 6em;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  
+    &--expanded {
+        max-height: 100em;
+        -webkit-line-clamp: unset;
+        line-clamp: unset;
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background: linear-gradient(to top, #F5F5F5 24%, transparent 100%);
+  }
+
+  &__read-more-btn,
+  &__collapse-btn {
+    display: block;
+    margin: 5px auto 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #E95721;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+  }
+}
+
+
+
+
