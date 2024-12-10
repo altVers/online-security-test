@@ -6,8 +6,8 @@ export const TaskSchema = z.object({
  id: z.number(),
  taskNum: z.number(),
  createDate: z.string(),
- controlDate: z.string(),
- releaseDate: z.string(),
+ controlDate: z.string().nullable(),
+ releaseDate: z.string().nullable(),
  system: z.string(),
  taskType: z.string(),
  taskObj: z.object({

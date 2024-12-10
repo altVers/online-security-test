@@ -2,9 +2,9 @@ export const testData = [
   {
     id: 1,
     taskNum: 14532,
-    createDate: "2023-10-10T14:48:00.000Z",
-    controlDate: "2023-11-10T14:48:00.000Z",
-    releaseDate: "2023-12-10T14:48:00.000Z",
+    createDate: "2023-05-21T18:25:43-05:00",
+    controlDate: "2022-05-24T18:25:43-05:00",
+    releaseDate: null,
     system: "Task system",
     taskType: "Task Type",
     taskObj: {
@@ -20,9 +20,9 @@ export const testData = [
   {
     id: 2,
     taskNum: 16534,
-    createDate: "2023-10-10T14:48:00.000Z",
-    controlDate: "2023-11-10T14:48:00.000Z",
-    releaseDate: "2023-12-10T14:48:00.000Z",
+    createDate: "2022-04-21T18:25:43-05:00",
+    controlDate: "2022-04-24T18:25:43-05:00",
+    releaseDate: "2022-04-27T18:25:43-05:00",
     system: "Task system",
     taskType: "Task Type",
     taskObj: {
@@ -39,9 +39,9 @@ export const testData = [
   {
     id: 3,
     taskNum: 255631,
-    createDate: "2023-10-10T14:48:00.000Z",
-    controlDate: "2023-11-10T14:48:00.000Z",
-    releaseDate: "2023-12-10T14:48:00.000Z",
+    createDate: "2022-04-21T18:25:43-05:00",
+    controlDate: "2022-04-24T18:25:43-05:00",
+    releaseDate: "2022-04-23T18:25:43-05:00",
     system: "Task system",
     taskType: "Task Type",
     taskObj: {
@@ -57,9 +57,9 @@ export const testData = [
   {
     id: 4,
     taskNum: 244531,
-    createDate: "2023-10-10T14:48:00.000Z",
-    controlDate: "2023-11-10T14:48:00.000Z",
-    releaseDate: "2023-12-10T14:48:00.000Z",
+    createDate: "2024-02-21T18:25:43-05:00",
+    controlDate: "2024-02-22T18:25:43-05:00",
+    releaseDate: "2024-02-22T18:25:43-05:00",
     system: "Task system",
     taskType: "Task Type",
     taskObj: {

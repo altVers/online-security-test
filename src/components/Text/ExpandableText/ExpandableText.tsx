@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useState, useRef, useEffect, FC } from "react";
+import { useState, FC } from "react";
 import styles from "./_ExpandableText.module.scss";
 
 interface Props {

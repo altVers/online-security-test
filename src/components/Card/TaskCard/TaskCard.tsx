@@ -5,6 +5,7 @@ import { parseTaskObj } from "../../../utils/parseTaskObj";
 import classNames from "classnames";
 import { Icon } from "../../Icon/Icon";
 import ExpandableText from "../../Text/ExpandableText/ExpandableText";
+import { parseDate } from "../../../utils/parseDate";
 
 interface Props {
   task: TTask;
@@ -33,7 +34,7 @@ export const TaskCard: FC<Props> = ({ task }) => {
         <span className={styles.task__number}>№ {task.taskNum}</span>
         <span className={styles.task__status}>{task.taskStatus[0]}</span>
         {task.taskTech ? (
-          <span className={styles['task__setting-icon']}>
+          <span className={styles["task__setting-icon"]}>
             <Icon id="settings" width="30" height="30" />
           </span>
         ) : null}
@@ -43,15 +44,17 @@ export const TaskCard: FC<Props> = ({ task }) => {
           <li className={styles["task__info-item"]}>
             <span className={styles["task__info-field"]}>Создана:</span>
             <span className={styles["task__info-value"]}>
-              {task.createDate}
+              {parseDate(task.createDate)}
             </span>
           </li>
-          <li className={styles["task__info-item"]}>
-            <span className={styles["task__info-field"]}>Контроль:</span>
-            <span className={styles["task__info-value"]}>
-              {task.controlDate}
-            </span>
-          </li>
+          {task.releaseDate && (
+            <li className={styles["task__info-item"]}>
+              <span className={styles["task__info-field"]}>Контроль:</span>
+              <span className={styles["task__info-value"]}>
+                {task.controlDate}
+              </span>
+            </li>
+          )}
           <li className={styles["task__info-item"]}>
             <span className={styles["task__info-field"]}>Система:</span>
             <span className={styles["task__info-value"]}>{task.system}</span>

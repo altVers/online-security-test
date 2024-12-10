@@ -4,22 +4,22 @@
 
   &--inprogress {
     .task__number {
-      background-color: #5D5D5D;
+      background-color: #5d5d5d;
     }
   }
   &--delayed {
     .task__number {
-      background-color: #F9372C;
+      background-color: #f9372c;
     }
   }
   &--comment {
     .task__number {
-      background-color: #019EC1;
+      background-color: #019ec1;
     }
   }
   &--done {
     .task__number {
-      background-color: #1C9A13;
+      background-color: #1c9a13;
     }
   }
 
@@ -35,7 +35,7 @@
     align-items: center;
     padding: 10px 16px;
     border-radius: 16px 0 16px 0;
-    background-color: #5D5D5D;
+    background-color: #5d5d5d;
     color: white;
     font-size: 16px;
     line-height: 20px;
@@ -54,39 +54,44 @@
   }
 
   &__info {
-
     &-list {
-        display: flex;
-        flex-direction: column;
+      padding: 8px 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
 
     &-item {
-        display: flex;
+      display: grid;
+      grid-template-columns: 60px auto;
+      gap: 10px;
+
+      &:last-child {
+        padding: 0 0 8px;
+        border-bottom: 1px solid #dbdbdb;
+      }
     }
 
     &-field {
-        display: flex;
-        justify-content: center;
-        padding: 6px 16px;
-        color: #444444;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
+      display: flex;
+
+      color: #444444;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
     }
 
     &-value {
-        display: flex;
-        justify-content: center;
-        padding: 6px 16px;
-        color: #222222;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
+      display: flex;
+
+      color: #222222;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 
   &__text-wrapper {
-    padding: 14px 16px;
-    border-top: 1px solid #DBDBDB;
+    padding: 8px 16px 20px;
   }
 }
