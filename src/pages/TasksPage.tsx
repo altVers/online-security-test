@@ -1,12 +1,12 @@
 import { FC, useEffect, useState } from "react";
 import { TTaskArr } from "../types/TTask";
-import { testData } from "../data/test-tast-data";
+import { testData } from "../data/test-data";
 import { TaskCardList } from "../components/Card/TaskCardList/TaskCardList";
 
 
 export const TasksPage:FC = () => {
+   const [data, setData] = useState<TTaskArr>([])
 
-   const [data, setData] = useState<TTaskArr>()
    useEffect(() => {
     /* 
     Тут как бы получаем данные с сервера. Так как побочный эффект — делаем в 

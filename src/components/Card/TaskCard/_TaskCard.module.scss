@@ -1,6 +1,7 @@
 .task {
   display: flex;
   flex-direction: column;
+  min-width: 328px;
 
   &--inprogress {
     .task__number {
@@ -63,7 +64,7 @@
 
     &-item {
       display: grid;
-      grid-template-columns: 60px auto;
+      grid-template-columns: 80px auto;
       gap: 10px;
 
       &:last-child {

@@ -1,12 +1,12 @@
 import { z } from "zod";
 
-// Создаем схему, по которой будем принимать json с бэка
+// Создаем схему, по которой будем валидировать json с бэка
 
 export const TaskSchema = z.object({
  id: z.number(),
  taskNum: z.number(),
  createDate: z.string(),
- controlDate: z.string().nullable(),
+ controlDate: z.string(),
  releaseDate: z.string().nullable(),
  system: z.string(),
  taskType: z.string(),

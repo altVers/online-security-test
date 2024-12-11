@@ -8,8 +8,7 @@ interface Props {
 
 const ExpandableText: FC<Props> = ({ text }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
-
-  // Функция для переключения состояния текста
+  
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
