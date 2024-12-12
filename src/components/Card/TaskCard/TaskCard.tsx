@@ -33,7 +33,9 @@ export const TaskCard: FC<Props> = ({ task }) => {
   return (
     <div className={classNames(styles.task, status)}>
       <div className={styles["task__header-wrapper"]}>
-        <span className={styles.task__number}>№ {getFormatedNumber(task.taskNum)}</span>
+        <span className={styles.task__number}>
+          № {getFormatedNumber(task.taskNum)}
+        </span>
         <span className={styles.task__status}>{task.taskStatus[0]}</span>
         {task.taskTech && (
           <span className={styles["task__setting-icon"]}>
@@ -67,12 +69,18 @@ export const TaskCard: FC<Props> = ({ task }) => {
           )}
           <li className={styles["task__info-item"]}>
             <span className={styles["task__info-field"]}>Система:</span>
-            <span className={styles["task__info-value"]}>{`${task.system} | ${task.taskType}`}</span>
+            <span
+              className={styles["task__info-value"]}
+            >{`${task.system} | ${task.taskType}`}</span>
           </li>
           <li className={styles["task__info-item"]}>
             <span className={styles["task__info-field"]}>Объект:</span>
             <span className={styles["task__info-value"]}>
-              {parseTaskObj(task.taskObj)}
+              {parseTaskObj(
+                task.taskObj.city,
+                task.taskObj.street,
+                task.taskObj.name
+              )}
             </span>
           </li>
         </ul>
